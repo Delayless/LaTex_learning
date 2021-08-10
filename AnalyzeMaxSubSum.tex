@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\setCJKmainfont{SimSun}
+\begin{document}
+分而治之时间复杂度：
+\[
+\begin{aligned}
+	T(N) &= 2T(N/2) + cN \\
+		 &= 2(T(N/2^2) + cN/2) + cN \\
+		 &= 2T(N/2^2) + 2cN \\
+		 &= 2T(N/2^k) + ckN
+\end{aligned}
+\]
+% \begin{equation}
+% \begin{split}
+% x_{t} &= f_{t}(x_{t-1},u_{t}) \\
+% y_{t} &=g_{t}(x_{t},v_{t})
+% \end{split}
+% \end{equation}
+\end{document}
